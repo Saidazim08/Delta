@@ -1,0 +1,305 @@
+*{
+    font-family: 'Roboto', sans-serif;
+}
+a{
+    text-decoration: none;
+    color: inherit;
+}
+
+h1{
+    font-weight: 700;
+}
+
+.nav-link{
+    font-weight: 700;
+    font-size: 18px;
+    color: rgb(0, 0, 0)!important;
+}
+
+
+@media screen and (max-width: 1235px){
+    .nav-link{
+        font-size: 15px;
+    }   
+}
+
+.nav-link:hover{
+    color: #ff5d22!important;
+    transition: 0.4s;
+}
+
+.navbar-light .navbar-toggler{
+    border: none;
+    background-color: rgba(209, 209, 209, 0.55) ;
+}
+
+.search-box{
+    position: relative;
+}
+
+.search-box input{
+    height: 43px;
+    font-size: 13px;
+    border: none;
+    border-radius: 5px;
+    background-color: #f5f5f5!important;
+    transition: 0.5s;
+    color: #221638;
+    padding: 1px 55px 0 15px;
+}
+
+
+.search-box button{
+    font-size: 20px;
+    position: absolute;
+    right: 0;
+    background-color: #f5f5f5;
+    top: 0;
+    height: 43px;
+    border: none;
+    border: 5px;
+    padding: 0 15px;
+}
+
+.orange{
+    font-weight: 600;
+    color: white;
+    background-color: #ff5d22;
+}
+
+.bg-banner{
+    background-image: url(./images/banner-bg-2cdf97d16a302dfba382ada7daff6a6c.png);
+    position: relative;
+    background-color: #fff;
+    background-position: bottom;
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding-bottom: 250px;
+}
+
+.bg-banner .banner-info h1{
+    padding-top: 100px;
+    font-weight: 700;
+    font-size: 48px;
+}
+
+@media screen and (max-width: 650px){
+    .bg-banner .banner-info h1{
+        margin: 0 auto;
+        text-align: center;
+        font-size: 40px;
+    }
+    .bg-banner .banner-info p{
+        text-align: center;
+    }
+    .banner-btn{
+        display: flex!important;
+        justify-content: center!important;
+    }
+}
+
+
+.bg-banner .banner-info p{
+    font-weight: 300;
+    font-size: 31px;
+}
+
+
+
+.card-direction{
+    text-align: center;
+    border: 1px solid rgb(218, 218, 218);
+    border-radius: 5px;
+    padding: 25px 10px;
+    transition: 0.4s;
+} 
+
+.card-direction:hover{
+    border: 1px solid #ff5d22;
+}
+
+.card-direction h3{
+    margin-top: 20px;
+    font-weight: 700;
+    transition: 0.4s;
+}
+.card-direction h3:hover{
+    color: #ff5d22;
+}
+
+.card-direction img {
+    display: inline-block;
+    transition: 0.5s;
+}
+
+.card-direction img:hover {
+    transform: scale(1.5);
+ }
+
+ .partners{
+     position: relative;
+ }
+
+ .partners .swiper-button-prev{
+     position: absolute;
+     top: 68%;
+     left: 10px;
+ }
+
+ .partners .swiper-button-next{
+    position: absolute;
+    top: 68%;
+    right: 10px;
+}
+
+ .mySwiper1{
+     width: 100%;
+     height: 100%;
+ }
+
+.mySwiper1 .swiper-slide{
+    height: auto;
+    width: auto;
+    background-color: #d1eaf5;
+} 
+.mySwiper1 .swiper-slide h3{
+    font-weight: 700;
+    font-size: 24px;
+}   
+.mySwiper1 .swiper-slide p{
+    font-weight: 400;
+    font-size: 16px;
+} 
+
+.bag-card .main{
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 200px;
+    padding: 0 15px;
+    border-top: 1px solid #003056;
+    border-left: 1px solid #003056;
+}
+
+
+
+.icon-swaper .swiper-slide{
+    width: 100px;
+    text-align: center;
+}
+
+.icon-swaper img{
+    width: 100px;
+}
+
+.icon-card{
+    padding: 0 15px;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-left: 1px solid #003056;
+    width: 100%;
+    height: 200px;
+    transition: 0.6s;
+}
+
+
+.icon-card:hover{
+    background-color: #d1eaf58c;
+}
+
+.bottom{
+    border-bottom: 1px solid black;
+}
+
+.swiper-pagination{
+    bottom: -10px!important;
+}
+
+.icon-swaper{
+    padding-bottom: 1px;
+    position: relative;
+}
+
+.mySwiper2::after{
+    content: "";
+    position: absolute;
+    display: block;
+    width: 10px;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: 4000;
+    background-color: #fff!important;
+}
+
+.start{
+    padding: 0 15px;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 200px;
+    transition: 0.6s;
+}
+
+.icon-swaper .swiper-pagination{
+    position: absolute;
+  bottom: 14px!important;
+}
+
+.swiper-pagination-bullet{
+    padding: 6px;
+}
+
+
+footer{
+    padding: 140px 40px;
+    background-color: #e8fdff;
+}
+
+footer h1{
+    font-weight: 700;
+    font-size: 48px;
+}
+
+footer p{
+    font-weight: 400;
+    font-size: 24px;
+}
+
+.footer-link{
+    list-style: none;
+}
+
+.footer-link a{
+    font-size: 20px;
+    line-height: 40px;
+    color: black;
+    transition: 0.4s;
+}
+.footer-link a:hover{
+    color: #ff5d22!important;
+}
+
+.news span{
+    font-weight: 700;
+    font-size: 22px;
+    margin: 20px;
+}
+
+.news h2{
+    margin: 15px 0;
+    font-weight: 700;
+    font-size: 24px;
+}
+
+.news p{
+    margin-left: 20px;
+    font-size: 20px;
+}
+

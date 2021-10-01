@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Document</title>
+   <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
+   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet"
+      integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+      integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+      crossorigin="anonymous" />
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+   <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+   <div class="bg-banner">
+      <nav class="navbar navbar-expand-lg navbar-light ms-1 me-4">
+         <div class="container-fluid">
+            <a class="navbar-brand " href="#">
+               <img src="./images/logo.png" height="60px" alt="?">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+               data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+               aria-label="Toggle navigation">
+               <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+               <ul class="navbar-nav align-items-center me-auto w-100 mb-2 mb-lg-0">
+                  <li class="nav-item">
+                     <a class="nav-link" href="#">Главная</a>
+                  </li>
+                  <li class="nav-item">
+                     <a class="nav-link" href="#">О компании</a>
+                  </li>
+                  <li class="nav-item">
+                     <a class="nav-link " href="#">Производители</a>
+                  </li>
+                  <li class="nav-item">
+                     <a class="nav-link " href="#">Продукты и Решения</a>
+                  </li>
+                  <li class="nav-item">
+                     <a class="nav-link " href="#">Новости</a>
+                  </li>
+                  <li class="nav-item">
+                     <a class="nav-link " href="#">Контакты</a>
+                  </li>
+                  <li class="nav-item">
+                     <a class="nav-link" href="#">Rus</a>
+                  </li>
+               </ul>
+               <form class="search-box me-2">
+                  <input class="form-control " type="text" placeholder="Search">
+                  <button type="submit">
+                     <i class="fa fa-search"></i>
+                  </button>
+               </form>
+               <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                  aria-hidden="true">
+                  <div class="modal-dialog">
+                     <div class="modal-content">
+                        <div class="modal-header">
+                           <h5 class="modal-title" id="exampleModalLabel">Заявка</h5>
+                           <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                           <form>
+                              <div class="mb-3">
+                                 <label for="name" class="form-label">Имя</label>
+                                 <input type="text" class="form-control" id="inputName" aria-describedby="nameHelp">
+                                 <div id="nameHelp" class="form-text">Введите свое имя</div>
+                              </div>
+                              <div class="mb-3">
+                                 <label for="name" class="form-label">Фамилия</label>
+                                 <input type="text" class="form-control" id="inputName" aria-describedby="nameHelp">
+                                 <div id="nameHelp" class="form-text">Введите свою фамилию</div>
+                              </div>
+                              <div class="mb-3">
+                                 <label for="name" class="form-label">Должность</label>
+                                 <input type="text" class="form-control" id="inputName" aria-describedby="nameHelp">
+                                 <div id="nameHelp" class="form-text">Введите свою должность</div>
+                              </div>
+                              <div class="mb-3">
+                                 <label for="name" class="form-label">Телефон</label>
+                                 <input type="text" class="form-control" id="inputName" aria-describedby="nameHelp">
+                                 <div id="nameHelp" class="form-text">Введите номер телефона</div>
+                              </div>
+                              <div class="mb-3">
+                                 <label for="name" class="form-label">Email</label>
+                                 <input type="text" class="form-control" id="inputName" aria-describedby="nameHelp">
+                                 <div id="nameHelp" class="form-text">Введите адрес электронной почты</div>
+                              </div>
+                              <div class="mb-3">
+                                 <label for="name" class="form-label">Компания</label>
+                                 <input type="text" class="form-control" id="inputName" aria-describedby="nameHelp">
+                                 <div id="nameHelp" class="form-text">Введите название вашей компании</div>
+                              </div>
+                              <div class="mb-3">
+                                 <label for="name" class="form-label">Интересующее решение</label>
+                                 <input type="text" class="form-control" id="inputName" aria-describedby="nameHelp">
+                                 <div id="nameHelp" class="form-text">Введите название интересующей вас позиции</div>
+                              </div>
+                           </form>
+                        </div>
+                        <div class="modal-footer">
+                           <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Отмена</button>
+                           <button type="button" class="btn orange">Отправить</button>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </nav>
+
+      <div class="container">
+         <div class="row banner-info p-5">
+            <div class="col-lg-6 col-md-12">
+               <h1>Наша Цель – превзойти ваши ожидания!</h1>
+               <p>Доверие и честность - наш главный ключ в работе с клиентами, партнерами и поставщиками.</p>
+               <button type="button" class="btn orange" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                  Заполнить форму
+               </button>
+            </div>
+            <div class="col-lg-6 col-md-12 d-flex align-items-end m-xl-auto m-md-5">
+               <img src="./images/banner-img.png" height="450px" alt="?">
+            </div>
+         </div>
+      </div>
+   </div>
+
+   <div class="direction-section">
+      <div class="container">
+         <h1 class="ps-4">НАШИ НАПРАВЛЕНИЯ</h1>
+         <div class="row justify-content-center">
+            <div class="col-lg-4 col-md-6 col-12 mt-3 d-flex justify-content-center">
+               <div class="col-11 card-direction">
+                  <img src="./images/computer1.png" height="65px" width="65px" alt="?">
+                  <a href="#">
+                     <h3>SD Division</h3>
+                  </a>
+                  <p class="text-start p-2">Дивизион Технологических решений, сфокусирован в области поставок широкого
+                     спектра сложных ИТ и
+                     телекоммуникационных решений, серверов и средств обработки и хранения данных, обеспечивая при этом
+                     техническую и консультационную поддержку.</p>
+               </div>
+            </div>
+            <div class="col-lg-4 col-md-6 col-12 mt-3 d-flex justify-content-center">
+               <div class="col-11 card-direction">
+                  <img src="./images/Group2.png" height="65px" width="65px" alt="?">
+                  <a href="#">
+                     <h3>VDD Division</h3>
+                  </a>
+                  <p class="text-start p-2">Дивизион Технологических решений, сфокусирован в области поставок широкого
+                     спектра сложных ИТ и
+                     телекоммуникационных решений, серверов и средств обработки и хранения данных, обеспечивая при этом
+                     техническую и консультационную поддержку.</p>
+               </div>
+            </div>
+            <div class="col-lg-4 col-md-6 col-12 mt-3 d-flex justify-content-center">
+               <div class="col-11 card-direction">
+                  <img src="./images/Vector3.png" height="65px" width="65px" alt="?">
+                  <a href="#">
+                     <h3>Mobile Division</h3>
+                  </a>
+                  <p class="text-start p-2">Дивизион Технологических решений, сфокусирован в области поставок широкого
+                     спектра сложных ИТ и
+                     телекоммуникационных решений, серверов и средств обработки и хранения данных, обеспечивая при этом
+                     техническую и консультационную поддержку.</p>
+               </div>
+            </div>
+         </div>
+      </div>
+   </div>
+
+   <div class="container pt-5 px-5 partners">
+      <h1 class="pt-5 pb-5 ">ПАРТНЕРЫ</h1>
+      <div class="swiper mySwiper1">
+         <div class="swiper-wrapper">
+            <div class="swiper-slide text-center px-3 py-4">
+               <img src="./images/slider1.svg" alt="">
+               <h3 class="pt-4">ФИНАНСЫ</h3>
+               <p class="text-start p-1">Обеспечиваем управление финансовыми рисками партнеров</p>
+            </div>
+            <div class="swiper-slide text-center px-3 py-4">
+               <img src="./images/slider2.png" width="96px" height="96px" alt="">
+               <h3 class="pt-4">ЛОГИСТИКА</h3>
+               <p class="text-start p-1">Гарантируем прозрачную схему поставок с учетом закона</p>
+            </div>
+            <div class="swiper-slide text-center px-3 py-4">
+               <img src="./images/slider3.png" width="96px" height="96px" alt="">
+               <h3 class="pt-4">МАРКЕТИНГ</h3>
+               <p class="text-start p-1">Реализовываем кампании по генерации лидов и продвижению брендов</p>
+            </div>
+            <div class="swiper-slide text-center px-3 py-4">
+               <img src="./images/slider4.png" alt="">
+               <h3 class="pt-4">ФИНАНСЫ</h3>
+               <p class="text-start p-1">Обеспечиваем управление финансовыми рисками партнеров</p>
+            </div>
+            <div class="swiper-slide text-center px-3 py-4">
+               <img src="./images/slider5.png" alt="">
+               <h3 class="pt-4">ЛОГИСТИКА</h3>
+               <p class="text-start p-1">Гарантируем прозрачную схему поставок с учетом закона</p>
+            </div>
+         </div>
+      </div>
+      <div class="swiper-button-prev pe-4"></div>
+      <div class="swiper-button-next ps-4"></div>
+   </div>
+
+
+   <div class="icon-swaper container pt-5 mt-5">
+      <h1 class="mb-5 ps-4">ПОРТФЕЛЬ ПРОДАВЦОВ</h1>
+      <div class="swiper mySwiper2 mb-5">
+         <div class="swiper-wrapper">
+            <div class="swiper-slide">
+               <div class="bottom start">
+                  <a href="#"><img src="./images/3cx.png" alt=""></a>
+               </div>
+               <div class="bottom start">
+                  <a href="#"><img src="./images/acer.png" alt=""></a>
+               </div>
+               <div class="start">
+                  <a href="#"><img src="./images/bosch.png" alt=""></a>
+               </div>
+            </div>
+            <div class="swiper-slide">
+               <div class="icon-card bottom">
+                  <a href="#"><img src="./images/canon.png" alt=""></a>
+               </div>
+               <div class="icon-card bottom">
+                  <a href="#"><img src="./images/check.png" alt=""></a>
+               </div>
+               <div class="icon-card">
+                  <a href="#"><img src="./images/cisco.png" alt=""></a>
+               </div>
+            </div>
+            <div class="swiper-slide">
+               <div class="icon-card bottom">
+                  <a href="#"><img src="./images/check.png" alt=""></a>
+               </div>
+               <div class="icon-card bottom">
+                  <a href="#"><img src="./images/canon.png" alt=""></a>
+               </div>
+               <div class="icon-card">
+                  <a href="#"><img src="./images/bosch.png" alt=""></a>
+               </div>
+            </div>
+            <div class="swiper-slide">
+               <div class="icon-card bottom">
+                  <a href="#"><img src="./images/check.png" alt=""></a>
+               </div>
+               <div class="icon-card bottom">
+                  <a href="#"><img src="./images/canon.png" alt=""></a>
+               </div>
+               <div class="icon-card">
+                  <a href="#"><img src="./images/bosch.png" alt=""></a>
+               </div>
+            </div>
+            <div class="swiper-slide">
+               <div class="icon-card bottom">
+                  <a href="#"><img src="./images/check.png" alt=""></a>
+               </div>
+               <div class="icon-card bottom">
+                  <a href="#"><img src="./images/canon.png" alt=""></a>
+               </div>
+               <div class="icon-card">
+                  <a href="#"><img src="./images/bosch.png" alt=""></a>
+               </div>
+            </div>
+            <div class="swiper-slide">
+               <div class="icon-card bottom">
+                  <a href="#"><img src="./images/canon.png" alt=""></a>
+               </div>
+               <div class="icon-card bottom">
+                  <a href="#"><img src="./images/check.png" alt=""></a>
+               </div>
+               <div class="icon-card">
+                  <a href="#"><img src="./images/cisco.png" alt=""></a>
+               </div>
+            </div>
+            <div class="swiper-slide">
+               <div class="icon-card bottom">
+                  <a href="#"><img src="./images/canon.png" alt=""></a>
+               </div>
+               <div class="icon-card bottom">
+                  <a href="#"><img src="./images/check.png" alt=""></a>
+               </div>
+               <div class="icon-card">
+                  <a href="#"><img src="./images/cisco.png" alt=""></a>
+               </div>
+            </div>
+         </div>
+      </div>
+      <div class="swiper-pagination"></div>
+   </div>
+
+   <div class="news mt-5">
+      <div class="container">
+         <h1 class="mb-5 ps-4">НОВОСТИ ИТ СФЕРЫ, АКЦИИ И ПРЕДЛОЖЕНИЯ</h1>
+         <div class="row">
+            <div class="col-lg-4 col-sm-12 mt-5">
+               <div class="col-lg-10 border p-2">
+                  <img class="w-100" src="./images/news1.jpg" alt="?">
+                  <span>23.09.2021</span>
+                  <h2>TECNO. НОВЫЙ БРЕНД В ПОРТФЕЛЕ ABRIS DISTRIBUTION</h3>
+                     <p>Время выделяться!</p>
+                     <a class="d-flex justify-content-end align-items-center m-e" href="#">Читать <i
+                           class="fa fa-arrow-right ms-2" aria-hidden="true"></i></a>
+               </div>
+            </div>
+            <div class="col-lg-4 col-sm-12">
+               <div class="col-lg-10 border p-2">
+                  <img class="w-100" src="./images/news2.jpg" alt="?">
+                  <span>27.09.2021</span>
+                  <h2>PIW - НОВОСТИ РЕШЕНИЙ CISCO ДЛЯ СЕТЕЙ ЦОД</h3>
+                     <p>Приглашаем принять участие в виртуальном ...</p>
+                     <a class="d-flex justify-content-end align-items-center " href="#">Читать <i
+                           class="fa fa-arrow-right ms-2" aria-hidden="true"></i></a>
+               </div>
+            </div>
+            <div class="col-lg-4 col-sm-12 mt-5">
+               <div class="col-lg-10 border p-2">
+                  <img class="w-100" src="./images/news3.jpg" alt="?">
+                  <span>12.07.2021</span>
+                  <h2>CANON СОВЕРШЕНСТВУЕТ САМЫЙ ЛЕГКИЙ В МИРЕ ПРОЕКТОР 4K</h3>
+                     <p>Canon анонсирует XEED 4K600Z</p>
+                     <a class="d-flex justify-content-end align-items-center " href="#">Читать <i
+                           class="fa fa-arrow-right ms-2" aria-hidden="true"></i></a>
+               </div>
+            </div>
+         </div>
+      </div>
+   </div>
+
+
+   <footer>
+      <div class="container">
+         <div class="row">
+            <div class="col-lg-9 col-md-12">
+               <h1>БЛАГОДАРИМ ВАС ЗА ИНТЕРЕС К НАШЕЙ КОМПАНИИ!</h1>
+               <p>Мы будем рады ответить на любые Ваши вопросы и обсудить
+                  возможности сотрудничества. Для того, чтобы начать работать
+                  с нами, заполните регистрационную анкету, и наш Менеджер
+                  свяжется с Вами.</p>
+               <button type="button" class="btn orange" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                  Заполнить форму
+               </button>
+            </div>
+            <div class="col-lg-3 col-md-12 text-lg-end text-center ">
+               <ul>
+                  <li class="footer-link">
+                     <a href="#">Главная</a>
+                  </li>
+                  <li class="footer-link">
+                     <a href="#">О компании</a>
+                  </li>
+                  <li class="footer-link">
+                     <a href="#">Производители</a>
+                  </li>
+                  <li class="footer-link">
+                     <a href="#">Продукты и Решения</a>
+                  </li>
+                  <li class="footer-link">
+                     <a href="#">Контакты</a>
+                  </li>
+               </ul>
+            </div>
+         </div>
+      </div>
+   </footer>
+
+
+
+   <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+   <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+      crossorigin="anonymous"></script>
+   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ"
+      crossorigin="anonymous"></script>
+   <script src="main.js"></script>
+   <script type="text/javascript" src="slick.js"></script>
+</body>
+
+</html>
