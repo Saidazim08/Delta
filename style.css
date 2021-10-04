@@ -19,7 +19,7 @@ h1{
 
 @media screen and (max-width: 1235px){
     .nav-link{
-        font-size: 15px;
+        font-size: 16px;
     }   
 }
 
@@ -92,19 +92,68 @@ h1{
     .bg-banner .banner-info p{
         text-align: center;
     }
-    .banner-btn{
-        display: flex!important;
-        justify-content: center!important;
+    .btn{
+        margin-bottom: 60px;
+        display: flex;
+        justify-content: center;
     }
 }
 
+.dropdown:hover .dropdown-menu {
+    display: block;
+    margin-top: 0;
+ }
+
+ .dropdown-toggle::after{
+     display: none;
+ }
+
+ .dropdown:hover .dropdown-menu{
+     visibility: visible;
+     opacity: 1;
+ }
+
+ .dropdown-menu{
+     transition: 0.3s;
+     display: block;
+     visibility: hidden;
+     opacity: 0;
+     border: none;
+     background-color: transparent;
+     border-radius: unset;
+ }
+
+
+ 
+ .drop-menu{
+     background-color: white;
+     padding-top: 3px;
+     margin-top: 2px;
+     border-top: 3px solid #ff5d22;
+     
+ }
+
+.dropdown-menu a{
+    transition: 0.5s;
+    font-weight: 600;
+    font-size: 16px;
+}
+
+ .dropdown-menu a:hover{
+     background-color: transparent;
+     color: #ff5d22;
+ }
+
+@media (max-width: 991.5px) {
+    .news .centr{
+margin-top: 48px;
+    }
+}
 
 .bg-banner .banner-info p{
     font-weight: 300;
     font-size: 31px;
 }
-
-
 
 .card-direction{
     text-align: center;
@@ -184,7 +233,6 @@ h1{
 }
 
 
-
 .icon-swaper .swiper-slide{
     width: 100px;
     text-align: center;
@@ -208,6 +256,10 @@ h1{
 
 
 .icon-card:hover{
+    background-color: #d1eaf58c;
+}
+
+.start:hover{
     background-color: #d1eaf58c;
 }
 
@@ -256,7 +308,6 @@ h1{
     padding: 6px;
 }
 
-
 footer{
     padding: 140px 40px;
     background-color: #e8fdff;
@@ -264,7 +315,7 @@ footer{
 
 footer h1{
     font-weight: 700;
-    font-size: 48px;
+    font-size: 36px;
 }
 
 footer p{
@@ -290,6 +341,22 @@ footer p{
     font-weight: 700;
     font-size: 22px;
     margin: 20px;
+}
+
+.news a{
+    color: #58e9f7;
+}
+
+.news i{
+    transition:  .4s ;
+}
+
+.news a:hover > i{
+    padding-left: 5px;
+}
+.news a{
+    display: table;
+    margin-left: auto;
 }
 
 .news h2{

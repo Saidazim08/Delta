@@ -12,6 +12,7 @@
    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
       integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
       crossorigin="anonymous" />
+      <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
    <link rel="preconnect" href="https://fonts.googleapis.com">
    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
@@ -36,17 +37,41 @@
                   <li class="nav-item">
                      <a class="nav-link" href="#">Главная</a>
                   </li>
-                  <li class="nav-item">
-                     <a class="nav-link" href="#">О компании</a>
+                  <li class="nav-item dropdown">
+                     <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">О компании</a>
+                     <div class="dropdown-menu">
+                        <div class="drop-menu">
+                           <a class="dropdown-item" href="#">Action</a>
+                           <a class="dropdown-item" href="#">Another action</a>
+                        </div>
+                     </div>
                   </li>
-                  <li class="nav-item">
-                     <a class="nav-link " href="#">Производители</a>
+                  <li class="nav-item dropdown">
+                     <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">Производители</a>
+                     <div class="dropdown-menu">
+                        <div class="drop-menu">
+                           <a class="dropdown-item" href="#">Action</a>
+                           <a class="dropdown-item" href="#">Another action</a>
+                        </div>
+                     </div>
                   </li>
-                  <li class="nav-item">
-                     <a class="nav-link " href="#">Продукты и Решения</a>
+                  <li class="nav-item dropdown">
+                     <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">Продукты и Решения</a>
+                     <div class="dropdown-menu">
+                        <div class="drop-menu">
+                           <a class="dropdown-item" href="#">Action</a>
+                           <a class="dropdown-item" href="#">Another action</a>
+                        </div>
+                     </div>
                   </li>
-                  <li class="nav-item">
-                     <a class="nav-link " href="#">Новости</a>
+                  <li class="nav-item dropdown">
+                     <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">Новости</a>
+                     <div class="dropdown-menu">
+                        <div class="drop-menu">
+                           <a class="dropdown-item" href="#">Action</a>
+                           <a class="dropdown-item" href="#">Another action</a>
+                        </div>
+                     </div>
                   </li>
                   <li class="nav-item">
                      <a class="nav-link " href="#">Контакты</a>
@@ -121,15 +146,15 @@
 
       <div class="container">
          <div class="row banner-info p-5">
-            <div class="col-lg-6 col-md-12">
+            <div data-aos="fade-right" data-aos-duration="1000" class="col-lg-6 col-md-12">
                <h1>Наша Цель – превзойти ваши ожидания!</h1>
                <p>Доверие и честность - наш главный ключ в работе с клиентами, партнерами и поставщиками.</p>
                <button type="button" class="btn orange" data-bs-toggle="modal" data-bs-target="#exampleModal">
                   Заполнить форму
                </button>
             </div>
-            <div class="col-lg-6 col-md-12 d-flex align-items-end m-xl-auto m-md-5">
-               <img src="./images/banner-img.png" height="450px" alt="?">
+            <div data-aos="fade-left" data-aos-duration="1500" class="col-lg-6 col-md-8 d-flex justify-content-center mt-sm-5 align-items-end m-xl-auto m-md-5">
+               <img src="./images/banner-img.png" height="100%" width="100%" alt="?">
             </div>
          </div>
       </div>
@@ -180,7 +205,7 @@
    </div>
 
    <div class="container pt-5 px-5 partners">
-      <h1 class="pt-5 pb-5 ">ПАРТНЕРЫ</h1>
+      <h1 class="pt-5 pb-5 ">НАШИ ПРЕИМУЩЕСТВА</h1>
       <div class="swiper mySwiper1">
          <div class="swiper-wrapper">
             <div class="swiper-slide text-center px-3 py-4">
@@ -189,22 +214,22 @@
                <p class="text-start p-1">Обеспечиваем управление финансовыми рисками партнеров</p>
             </div>
             <div class="swiper-slide text-center px-3 py-4">
-               <img src="./images/slider2.png" width="96px" height="96px" alt="">
+               <img src="./images/slider2.png" width="85px" height="85px" alt="">
                <h3 class="pt-4">ЛОГИСТИКА</h3>
                <p class="text-start p-1">Гарантируем прозрачную схему поставок с учетом закона</p>
             </div>
             <div class="swiper-slide text-center px-3 py-4">
-               <img src="./images/slider3.png" width="96px" height="96px" alt="">
+               <img src="./images/slider3.png" width="85px" height="85px" alt="">
                <h3 class="pt-4">МАРКЕТИНГ</h3>
                <p class="text-start p-1">Реализовываем кампании по генерации лидов и продвижению брендов</p>
             </div>
             <div class="swiper-slide text-center px-3 py-4">
-               <img src="./images/slider4.png" alt="">
+               <img src="./images/slider4.png" width="85px" height="85px" alt="">
                <h3 class="pt-4">ФИНАНСЫ</h3>
                <p class="text-start p-1">Обеспечиваем управление финансовыми рисками партнеров</p>
             </div>
             <div class="swiper-slide text-center px-3 py-4">
-               <img src="./images/slider5.png" alt="">
+               <img src="./images/slider5.png" width="85px" height="85px" alt="">
                <h3 class="pt-4">ЛОГИСТИКА</h3>
                <p class="text-start p-1">Гарантируем прозрачную схему поставок с учетом закона</p>
             </div>
@@ -216,84 +241,84 @@
 
 
    <div class="icon-swaper container pt-5 mt-5">
-      <h1 class="mb-5 ps-4">ПОРТФЕЛЬ ПРОДАВЦОВ</h1>
+      <h1 class="mb-5 ps-4">ПАРТНЕРЫ</h1>
       <div class="swiper mySwiper2 mb-5">
          <div class="swiper-wrapper">
             <div class="swiper-slide">
                <div class="bottom start">
-                  <a href="#"><img src="./images/3cx.png" alt=""></a>
+                  <a href="#"><img src="./images/3cx.png" alt="?"></a>
                </div>
                <div class="bottom start">
-                  <a href="#"><img src="./images/acer.png" alt=""></a>
+                  <a href="#"><img src="./images/acer.png" alt="?"></a>
                </div>
                <div class="start">
-                  <a href="#"><img src="./images/bosch.png" alt=""></a>
+                  <a href="#"><img src="./images/bosch.png" alt="?"></a>
                </div>
             </div>
             <div class="swiper-slide">
                <div class="icon-card bottom">
-                  <a href="#"><img src="./images/canon.png" alt=""></a>
+                  <a href="#"><img src="./images/canon.png" alt="?"></a>
                </div>
                <div class="icon-card bottom">
-                  <a href="#"><img src="./images/check.png" alt=""></a>
+                  <a href="#"><img src="./images/check.png" alt="?"></a>
                </div>
                <div class="icon-card">
-                  <a href="#"><img src="./images/cisco.png" alt=""></a>
+                  <a href="#"><img src="./images/cisco.png" alt="?"></a>
                </div>
             </div>
             <div class="swiper-slide">
                <div class="icon-card bottom">
-                  <a href="#"><img src="./images/check.png" alt=""></a>
+                  <a href="#"><img src="./images/check.png" alt="?"></a>
                </div>
                <div class="icon-card bottom">
-                  <a href="#"><img src="./images/canon.png" alt=""></a>
+                  <a href="#"><img src="./images/canon.png" alt="?"></a>
                </div>
                <div class="icon-card">
-                  <a href="#"><img src="./images/bosch.png" alt=""></a>
+                  <a href="#"><img src="./images/bosch.png" alt="?"></a>
                </div>
             </div>
             <div class="swiper-slide">
                <div class="icon-card bottom">
-                  <a href="#"><img src="./images/check.png" alt=""></a>
+                  <a href="#"><img src="./images/check.png" alt="?"></a>
                </div>
                <div class="icon-card bottom">
-                  <a href="#"><img src="./images/canon.png" alt=""></a>
+                  <a href="#"><img src="./images/canon.png" alt="?"></a>
                </div>
                <div class="icon-card">
-                  <a href="#"><img src="./images/bosch.png" alt=""></a>
+                  <a href="#"><img src="./images/bosch.png" alt="?"></a>
                </div>
             </div>
             <div class="swiper-slide">
                <div class="icon-card bottom">
-                  <a href="#"><img src="./images/check.png" alt=""></a>
+                  <a href="#"><img src="./images/check.png" alt="?"></a>
                </div>
                <div class="icon-card bottom">
-                  <a href="#"><img src="./images/canon.png" alt=""></a>
+                  <a href="#"><img src="./images/canon.png" alt="?"></a>
                </div>
                <div class="icon-card">
-                  <a href="#"><img src="./images/bosch.png" alt=""></a>
+                  <a href="#"><img src="./images/bosch.png" alt="?"></a>
                </div>
             </div>
             <div class="swiper-slide">
                <div class="icon-card bottom">
-                  <a href="#"><img src="./images/canon.png" alt=""></a>
+                  <a href="#"><img src="./images/canon.png" alt="?"></a>
                </div>
                <div class="icon-card bottom">
-                  <a href="#"><img src="./images/check.png" alt=""></a>
+                  <a href="#"><img src="./images/check.png" alt="?"></a>
                </div>
                <div class="icon-card">
-                  <a href="#"><img src="./images/cisco.png" alt=""></a>
+                  <a href="#"><img src="./images/cisco.png" alt="?"></a>
                </div>
             </div>
             <div class="swiper-slide">
                <div class="icon-card bottom">
-                  <a href="#"><img src="./images/canon.png" alt=""></a>
+                  <a href="#"><img src="./images/canon.png" alt="?"></a>
                </div>
                <div class="icon-card bottom">
-                  <a href="#"><img src="./images/check.png" alt=""></a>
+                  <a href="#"><img src="./images/check.png" alt="?"></a>
                </div>
                <div class="icon-card">
-                  <a href="#"><img src="./images/cisco.png" alt=""></a>
+                  <a href="#"><img src="./images/cisco.png" alt="?"></a>
                </div>
             </div>
          </div>
@@ -304,35 +329,32 @@
    <div class="news mt-5">
       <div class="container">
          <h1 class="mb-5 ps-4">НОВОСТИ ИТ СФЕРЫ, АКЦИИ И ПРЕДЛОЖЕНИЯ</h1>
-         <div class="row">
-            <div class="col-lg-4 col-sm-12 mt-5">
-               <div class="col-lg-10 border p-2">
-                  <img class="w-100" src="./images/news1.jpg" alt="?">
+         <div class="row justify-content-md-center">
+            <div class="col-lg-4 col-md-6 col-sm-12 mt-5">
+               <div class="col-lg-11 col-md-12 col-sm-11 mx-auto border p-2">
+                  <img class="w-100 " height="328px" src="./images/news1.jpg" alt="?">
                   <span>23.09.2021</span>
-                  <h2>TECNO. НОВЫЙ БРЕНД В ПОРТФЕЛЕ ABRIS DISTRIBUTION</h3>
-                     <p>Время выделяться!</p>
-                     <a class="d-flex justify-content-end align-items-center m-e" href="#">Читать <i
-                           class="fa fa-arrow-right ms-2" aria-hidden="true"></i></a>
+                  <h2>TECNO. НОВЫЙ БРЕНД В НАШЕМ ПОРТФЕЛЕ ABRIS DISTRIBUTION</h3>
+                     <p>Время выделяться с новым брендом</p>
+                     <a class="" href="#">Читать <i class="fa fa-arrow-right ms-2" aria-hidden="true"></i></a>
                </div>
             </div>
-            <div class="col-lg-4 col-sm-12">
-               <div class="col-lg-10 border p-2">
-                  <img class="w-100" src="./images/news2.jpg" alt="?">
+            <div class="col-lg-4 col-md-6 col-sm-12 centr">
+               <div class="col-lg-11 col-md-12 col-sm-11 mx-auto border p-2">
+                  <img class="w-100" height="328px" src="./images/news2.jpg" alt="?">
                   <span>27.09.2021</span>
-                  <h2>PIW - НОВОСТИ РЕШЕНИЙ CISCO ДЛЯ СЕТЕЙ ЦОД</h3>
+                  <h2>PIW - НОВОСТИ РЕШЕНИЙ CISCO ДЛЯ УНИКАЛЬНЫХ СЕТЕЙ ЦОД</h3>
                      <p>Приглашаем принять участие в виртуальном ...</p>
-                     <a class="d-flex justify-content-end align-items-center " href="#">Читать <i
-                           class="fa fa-arrow-right ms-2" aria-hidden="true"></i></a>
+                     <a class="" href="#">Читать <i class="fa fa-arrow-right ms-2" aria-hidden="true"></i></a>
                </div>
             </div>
-            <div class="col-lg-4 col-sm-12 mt-5">
-               <div class="col-lg-10 border p-2">
-                  <img class="w-100" src="./images/news3.jpg" alt="?">
+            <div class="col-lg-4 col-md-6 col-sm-12 mt-5">
+               <div class="col-lg-11 col-md-12 col-sm-11 mx-auto col-md-6 border p-2">
+                  <img class="w-100 " height="328px" src="./images/news3.jpg" alt="?">
                   <span>12.07.2021</span>
-                  <h2>CANON СОВЕРШЕНСТВУЕТ САМЫЙ ЛЕГКИЙ В МИРЕ ПРОЕКТОР 4K</h3>
-                     <p>Canon анонсирует XEED 4K600Z</p>
-                     <a class="d-flex justify-content-end align-items-center " href="#">Читать <i
-                           class="fa fa-arrow-right ms-2" aria-hidden="true"></i></a>
+                  <h2>CANON СОВЕРШЕНСТВУЕТ САМЫЙ ЛЕГКИЙ В МИРЕ ПРОЕКТОР</h3>
+                     <p>Canon анонсирует новый XEED 4K600Z</p>
+                     <a class="" href="#">Читать <i class="fa fa-arrow-right ms-2" aria-hidden="true"></i></a>
                </div>
             </div>
          </div>
@@ -377,7 +399,7 @@
    </footer>
 
 
-
+   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
    <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
       integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
@@ -385,6 +407,9 @@
    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ"
       crossorigin="anonymous"></script>
+      <script>
+         AOS.init();
+       </script>
    <script src="main.js"></script>
    <script type="text/javascript" src="slick.js"></script>
 </body>
