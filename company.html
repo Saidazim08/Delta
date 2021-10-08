@@ -2,179 +2,305 @@
 <html lang="ru">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
-        integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
-        crossorigin="anonymous" />
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
-    <link rel="stylesheet" href="style.css">
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Document</title>
+   <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
+   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet"
+      integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+      integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+      crossorigin="anonymous" />
+   <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+   <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-    <div class="bg-banner">
-        <nav class="navbar navbar-expand-lg navbar-light ms-1 me-4">
-            <div class="container-fluid">
-                <a class="navbar-brand " href="#">
-                    <img src="./images/logo.png" height="60px" alt="?">
-                </a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
-                    aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <ul class="navbar-nav me-auto w-100 mb-2 mb-lg-0">
-                        <li class="nav-item">
-                            <a class="nav-link" href="index.html">Главная</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="company.html">О компании</a>
-                        </li>
-                        <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">Производители</a>
-                            <div class="dropdown-menu">
-                                <div class="drop-menu">
-                                    <a class="dropdown-item" href="#">Вендоры</a>
-                                    <a class="dropdown-item" href="#">Информация о вендере</a>
-                                </div>
-                            </div>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Продукты и Решения</a>
-                        </li>
-                        <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="#">Новости</a>
-                            <div class="dropdown-menu">
-                                <div class="drop-menu">
-                                    <a class="dropdown-item" href="#">Новости ИТ-Сферы</a>
-                                    <a class="dropdown-item" href="#">Страничка новостей</a>
-                                </div>
-                            </div>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link " href="#">Контакты</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Rus</a>
-                        </li>
-                    </ul>
-                    <a class="search-btn" href="#"><i class="fa fa-search"></i></a>
-                </div>
+   <div class="head-bg py-2">
+      <nav class="navbar navbar-expand-lg navbar-light ms-1 me-4">
+         <div class="container-fluid">
+            <a class="navbar-brand " href="#">
+               <img src="./images/logo.png" height="60px" alt="?">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+               data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+               aria-label="Toggle navigation">
+               <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+               <ul class="navbar-nav me-auto w-100 mb-2 mb-lg-0">
+                  <li class="nav-item">
+                     <a class="nav-link" href="index.html">Главная</a>
+                  </li>
+                  <li class="nav-item">
+                     <a class="nav-link" href="company.html">О компании</a>
+                  </li>
+                  <li class="nav-item dropdown">
+                     <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">Производители</a>
+                     <div class="dropdown-menu">
+                        <div class="drop-menu">
+                           <a class="dropdown-item" href="producers.html">Вендоры</a>
+                           <a class="dropdown-item" href="vendor-info.html">Информация о вендере</a>
+                        </div>
+                     </div>
+                  </li>
+                  <li class="nav-item">
+                     <a class="nav-link" href="products.html">Продукты и Решения</a>
+                  </li>
+                  <li class="nav-item dropdown">
+                     <a class="nav-link dropdown-toggle" href="#">Новости</a>
+                     <div class="dropdown-menu">
+                        <div class="drop-menu">
+                           <a class="dropdown-item" href="news.html">Новости ИТ-Сферы</a>
+                           <a class="dropdown-item" href="news-page.html">Страничка новостей</a>
+                        </div>
+                     </div>
+                  </li>
+                  <li class="nav-item">
+                     <a class="nav-link " href="contacts.html">Контакты</a>
+                  </li>
+                  <li class="nav-item">
+                     <a class="nav-link" href="#">Rus</a>
+                  </li>
+               </ul>
+               <a class="search-btn" href="#"><i class="fa fa-search"></i></a>
             </div>
-        </nav>
-    </div>
+         </div>
+      </nav>
+   </div>
 
-    <footer>
-        <div class="container">
-           <div class="row">
-              <div class="col-lg-9 col-md-12">
-                 <h1>БЛАГОДАРИМ ВАС ЗА ИНТЕРЕС К НАШЕЙ КОМПАНИИ!</h1>
-                 <p>Мы будем рады ответить на любые Ваши вопросы и обсудить
-                    возможности сотрудничества. Для того, чтобы начать работать
-                    с нами, заполните регистрационную анкету, и наш Менеджер
-                    свяжется с Вами.</p>
-                 <button type="button" class="btn orange" data-bs-toggle="modal" data-bs-target="#exampleModal">
-                    Заполнить форму
-                 </button>
-                 <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
-                 aria-hidden="true">
-                 <div class="modal-dialog">
-                    <div class="modal-content">
-                       <div class="modal-header">
-                          <h5 class="modal-title" id="exampleModalLabel">Заявка</h5>
-                          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                       </div>
-                       <div class="modal-body">
-                          <form>
-                             <div class="mb-3">
-                                <label for="name" class="form-label">Имя</label>
-                                <input type="text" class="form-control" id="inputName" aria-describedby="nameHelp">
-                                <div id="nameHelp" class="form-text">Введите свое имя</div>
-                             </div>
-                             <div class="mb-3">
-                                <label for="name" class="form-label">Фамилия</label>
-                                <input type="text" class="form-control" id="inputName" aria-describedby="nameHelp">
-                                <div id="nameHelp" class="form-text">Введите свою фамилию</div>
-                             </div>
-                             <div class="mb-3">
-                                <label for="name" class="form-label">Должность</label>
-                                <input type="text" class="form-control" id="inputName" aria-describedby="nameHelp">
-                                <div id="nameHelp" class="form-text">Введите свою должность</div>
-                             </div>
-                             <div class="mb-3">
-                                <label for="name" class="form-label">Телефон</label>
-                                <input type="text" class="form-control" id="inputName" aria-describedby="nameHelp">
-                                <div id="nameHelp" class="form-text">Введите номер телефона</div>
-                             </div>
-                             <div class="mb-3">
-                                <label for="name" class="form-label">Email</label>
-                                <input type="text" class="form-control" id="inputName" aria-describedby="nameHelp">
-                                <div id="nameHelp" class="form-text">Введите адрес электронной почты</div>
-                             </div>
-                             <div class="mb-3">
-                                <label for="name" class="form-label">Компания</label>
-                                <input type="text" class="form-control" id="inputName" aria-describedby="nameHelp">
-                                <div id="nameHelp" class="form-text">Введите название вашей компании</div>
-                             </div>
-                             <div class="mb-3">
-                                <label for="name" class="form-label">Интересующее решение</label>
-                                <input type="text" class="form-control" id="inputName" aria-describedby="nameHelp">
-                                <div id="nameHelp" class="form-text">Введите название интересующей вас позиции</div>
-                             </div>
-                          </form>
-                       </div>
-                       <div class="modal-footer">
-                          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Отмена</button>
-                          <button type="button" class="btn orange">Отправить</button>
-                       </div>
-                    </div>
-                 </div>
-              </div>
-              </div>
-              <div class="col-lg-3 col-md-12 text-lg-end text-center ">
-                 <ul>
-                    <li class="footer-link">
-                       <a href="#">Главная</a>
-                    </li>
-                    <li class="footer-link">
-                       <a href="#">О компании</a>
-                    </li>
-                    <li class="footer-link">
-                       <a href="#">Производители</a>
-                    </li>
-                    <li class="footer-link">
-                       <a href="#">Продукты и Решения</a>
-                    </li>
-                    <li class="footer-link">
-                       <a href="#">Контакты</a>
-                    </li>
-                 </ul>
-              </div>
-           </div>
-        </div>
-     </footer>
-  
-     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-     <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
-     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
-        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
-        crossorigin="anonymous"></script>
-     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ"
-        crossorigin="anonymous"></script>
-     <script>
-        AOS.init();
-     </script>
-     <script src="main.js"></script>
+   <div class="container py-5">
+      <div class="section1 pb-5">
+         <h1 class="ps-4">О КОМПАНИИ</h1>
+         <p class="pt-3">ООО «Delta Distribution» - дистрибьютор IT- оборудования, IT-решений и услуг. Генеральный
+            партнер ABRIS Distribution в Армении. <br>
+            Мы используем максимальный спектр современных информационных технологий и управленческих подходов для
+            решения задач наших партнеров. Наша работа повышает эффективность бизнеса и создает прочную основу для его
+            дальнейшего развития. <br>
+            Мы гарантируем нашим партнерам достойный уровень обслуживания и индивидуальный подход, основанный на высокой
+            степени доверия, равенства и справедливости. <br>
+            Благодаря успешному сотрудничеству с ведущими международными транспортно-логистическими компаниями, мы
+            обеспечиваем доставку Ваших грузов оптимальным образом, сочетая при этом надежность и гарантированные сроки.
+         </p>
+      </div>
+      
+      <div class="section2 my-5 ">
+         <div class="row">
+            <div class="col-lg-6 col-md-12">
+               <img src="./images/section2.png" width="100%" alt="">
+            </div>
+            <div class="col-lg-6 col-md-12 d-flex align-items-center">
+               <div>
+                  <h1 class="ps-4">НАША МИССИЯ</h1>
+                  <p class="pt-3">
+                     Повышать стандарты информационных технологий и уровень жизни в регионе, продвигая на рынки
+                     инновационные
+                     продукты и решения в сочетании с превосходным уровнем поддержки клиентов.
+                  </p>
+               </div>
+            </div>
+         </div>
+      </div>
+      <div class="section3">
+         <h1 class="ps-4">НАШИ НАПРАВЛЕНИЯ</h1>
+         <div class="row justify-content-center">
+            <div class="col-lg-4 col-md-6 col-12 mt-3 d-flex justify-content-center">
+               <div class="col-11 card-direction">
+                  <img src="./images/computer1.png" height="65px" width="65px" alt="?">
+                  <a href="#">
+                     <h3>SD Division</h3>
+                  </a>
+                  <p class="text-start p-2">Дивизион Технологических решений, сфокусирован в области поставок широкого
+                     спектра сложных ИТ и
+                     телекоммуникационных решений, серверов и средств обработки и хранения данных, обеспечивая при этом
+                     техническую и консультационную поддержку.</p>
+               </div>
+            </div>
+            <div class="col-lg-4 col-md-6 col-12 mt-3 d-flex justify-content-center">
+               <div class="col-11 card-direction">
+                  <img src="./images/Group2.png" height="65px" width="65px" alt="?">
+                  <a href="#">
+                     <h3>VDD Division</h3>
+                  </a>
+                  <p class="text-start p-2">Дивизион Технологических решений, сфокусирован в области поставок широкого
+                     спектра сложных ИТ и
+                     телекоммуникационных решений, серверов и средств обработки и хранения данных, обеспечивая при этом
+                     техническую и консультационную поддержку.</p>
+               </div>
+            </div>
+            <div class="col-lg-4 col-md-6 col-12 mt-3 d-flex justify-content-center">
+               <div class="col-11 card-direction">
+                  <img src="./images/Vector3.png" height="65px" width="65px" alt="?">
+                  <a href="#">
+                     <h3>Mobile Division</h3>
+                  </a>
+                  <p class="text-start p-2">Дивизион Технологических решений, сфокусирован в области поставок широкого
+                     спектра сложных ИТ и
+                     телекоммуникационных решений, серверов и средств обработки и хранения данных, обеспечивая при этом
+                     техническую и консультационную поддержку.</p>
+               </div>
+            </div>
+         </div>
+      </div>
+      <div class="section4 my-5">
+         <div class="row">
+            <div class="col-lg-6 col-md-12 d-flex align-items-center">
+               <div>
+                  <h1 class="ps-4">ВИДЕНИЕ КОМПАНИИ</h1>
+                  <p class="pt-3">
+                     Расширяя границы присутствия, продвигать высокие технологии и поднимать уровень технических знаний
+                     общества, способствуя прогрессу в странах Региона.
+                  </p>
+               </div>
+            </div>
+            <div class="col-lg-6 col-md-12">
+               <img src="./images/section3.png" width="100%" alt="">
+            </div>
+         </div>
+      </div>
+
+      <div class="px-5 partners my-5">
+         <h1 class="pt-5 pb-5">НАШИ ПРЕИМУЩЕСТВА</h1>
+         <div class="swiper mySwiper1">
+            <div class="swiper-wrapper">
+               <div class="swiper-slide text-center px-3 py-4">
+                  <img src="./images/slider1.svg" width="85px" height="85px" alt="?">
+                  <h3 class="pt-4">ФИНАНСЫ</h3>
+                  <p class="text-start p-1">Обеспечиваем управление финансовыми рисками партнеров</p>
+               </div>
+               <div class="swiper-slide text-center px-3 py-4">
+                  <img src="./images/slider2.png" width="85px" height="85px" alt="?">
+                  <h3 class="pt-4">ЛОГИСТИКА</h3>
+                  <p class="text-start p-1">Гарантируем прозрачную схему поставок с учетом закона</p>
+               </div>
+               <div class="swiper-slide text-center px-3 py-4">
+                  <img src="./images/slider3.png" width="85px" height="85px" alt="?">
+                  <h3 class="pt-4">МАРКЕТИНГ</h3>
+                  <p class="text-start p-1">Реализовываем кампании по генерации лидов и продвижению брендов</p>
+               </div>
+               <div class="swiper-slide text-center px-3 py-4">
+                  <img src="./images/slider4.png" width="85px" height="85px" alt="?">
+                  <h3 class="pt-4">ФИНАНСЫ</h3>
+                  <p class="text-start p-1">Обеспечиваем управление финансовыми рисками партнеров</p>
+               </div>
+               <div class="swiper-slide text-center px-3 py-4">
+                  <img src="./images/slider5.png" width="85px" height="85px" alt="?">
+                  <h3 class="pt-4">ЛОГИСТИКА</h3>
+                  <p class="text-start p-1">Гарантируем прозрачную схему поставок с учетом закона</p>
+               </div>
+            </div>
+         </div>
+         <div class="swiper-button-prev pe-4"></div>
+         <div class="swiper-button-next ps-4"></div>
+      </div>
+   </div>
+
+
+   <footer>
+      <div class="container">
+         <div class="row">
+            <div class="col-lg-9 col-md-12">
+               <h1>БЛАГОДАРИМ ВАС ЗА ИНТЕРЕС К НАШЕЙ КОМПАНИИ!</h1>
+               <p>Мы будем рады ответить на любые Ваши вопросы и обсудить
+                  возможности сотрудничества. Для того, чтобы начать работать
+                  с нами, заполните регистрационную анкету, и наш Менеджер
+                  свяжется с Вами.</p>
+               <button type="button" class="btn orange" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                  Заполнить форму
+               </button>
+               <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                  aria-hidden="true">
+                  <div class="modal-dialog">
+                     <div class="modal-content">
+                        <div class="modal-header">
+                           <h5 class="modal-title" id="exampleModalLabel">Заявка</h5>
+                           <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                           <form>
+                              <div class="mb-3">
+                                 <label for="name" class="form-label">Имя</label>
+                                 <input type="text" class="form-control" id="inputName" aria-describedby="nameHelp">
+                                 <div id="nameHelp" class="form-text">Введите свое имя</div>
+                              </div>
+                              <div class="mb-3">
+                                 <label for="name" class="form-label">Фамилия</label>
+                                 <input type="text" class="form-control" id="inputName" aria-describedby="nameHelp">
+                                 <div id="nameHelp" class="form-text">Введите свою фамилию</div>
+                              </div>
+                              <div class="mb-3">
+                                 <label for="name" class="form-label">Должность</label>
+                                 <input type="text" class="form-control" id="inputName" aria-describedby="nameHelp">
+                                 <div id="nameHelp" class="form-text">Введите свою должность</div>
+                              </div>
+                              <div class="mb-3">
+                                 <label for="name" class="form-label">Телефон</label>
+                                 <input type="text" class="form-control" id="inputName" aria-describedby="nameHelp">
+                                 <div id="nameHelp" class="form-text">Введите номер телефона</div>
+                              </div>
+                              <div class="mb-3">
+                                 <label for="name" class="form-label">Email</label>
+                                 <input type="text" class="form-control" id="inputName" aria-describedby="nameHelp">
+                                 <div id="nameHelp" class="form-text">Введите адрес электронной почты</div>
+                              </div>
+                              <div class="mb-3">
+                                 <label for="name" class="form-label">Компания</label>
+                                 <input type="text" class="form-control" id="inputName" aria-describedby="nameHelp">
+                                 <div id="nameHelp" class="form-text">Введите название вашей компании</div>
+                              </div>
+                              <div class="mb-3">
+                                 <label for="name" class="form-label">Интересующее решение</label>
+                                 <input type="text" class="form-control" id="inputName" aria-describedby="nameHelp">
+                                 <div id="nameHelp" class="form-text">Введите название интересующей вас позиции</div>
+                              </div>
+                           </form>
+                        </div>
+                        <div class="modal-footer">
+                           <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Отмена</button>
+                           <button type="button" class="btn orange">Отправить</button>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+            <div class="col-lg-3 col-md-12 text-lg-end text-center ">
+               <ul>
+                  <li class="footer-link">
+                     <a href="#">Главная</a>
+                  </li>
+                  <li class="footer-link">
+                     <a href="#">О компании</a>
+                  </li>
+                  <li class="footer-link">
+                     <a href="#">Производители</a>
+                  </li>
+                  <li class="footer-link">
+                     <a href="#">Продукты и Решения</a>
+                  </li>
+                  <li class="footer-link">
+                     <a href="#">Контакты</a>
+                  </li>
+               </ul>
+            </div>
+         </div>
+      </div>
+   </footer>
+
+   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+   <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+   <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+      crossorigin="anonymous"></script>
+   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ"
+      crossorigin="anonymous"></script>
+   <script>
+      AOS.init();
+   </script>
+   <script src="main.js"></script>
 </body>
-

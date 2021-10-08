@@ -104,7 +104,6 @@ body.search-open {
     .small-12 {
         width: 70%;
     }
-   
 }
 
 .search-box.search-elem label.placeholder {
@@ -132,6 +131,7 @@ body.search-open {
 }
 
 .search-btn {
+    transition: 0.5s;
     font-size: 17px;
     padding: 0 10px;
 }
@@ -447,4 +447,167 @@ footer p {
 .news p {
     margin-left: 20px;
     font-size: 20px;
+}
+
+.head-bg {
+    background: rgb(143, 228, 235);
+    background: linear-gradient(90deg, rgb(244 254 255) 0%, rgba(255, 255, 255, 1) 98%);
+}
+
+.tab-content .swiper-slide {
+    width: 100px;
+    text-align: center;
+}
+
+.tab-content img {
+    width: 100px;
+}
+
+.docs {
+    background-color: #d1eaf5;
+}
+.docs a {
+    font-weight: 700;
+    font-size: 24px;
+}
+
+.brdr {
+    color: black !important;
+    border-bottom: 2px solid black;
+    transition: 0.1s;
+}
+
+.brdr:hover {
+    border-bottom: 3px solid black;
+}
+
+.app--btn {
+    font-weight: 700;
+    font-size: 1.4em;
+    letter-spacing: 1px;
+    position: relative;
+    display: inline-block;
+    height: 44px;
+    padding: 0 25px;
+    padding-right: 54px;
+    border: 1px solid #ff5d22;
+    border-right: 0;
+    border-radius: 5px;
+    background: linear-gradient(to left, white 50%, #ff5d22 50%) right;
+    background-size: 200%;
+    transition: 0.4s ease-out;
+}
+
+.app--btn a {
+    color: black;
+    transition: 0.4s ease-out;
+}
+.app--btn a:hover {
+    color: white;
+}
+.app--btn:hover {
+    color: white;
+    background-position: left;
+}
+
+.app--btn i {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 42px;
+    width: 44px;
+    top: 0;
+    bottom: -1px;
+    right: -2px;
+    border-radius: 5px;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+    color: #f0f0f0;
+    background: #ff5d22;
+}
+
+.left-btn {
+    position: relative;
+    display: inline-block;
+    height: 44px;
+    letter-spacing: unset;
+    font-weight: 500;
+    font-size: 18px;
+    border-right: 1px solid #ff5d22;
+    padding-right: 25px;
+    padding-left: 54px;
+    background: linear-gradient(to right, white 50%, #ff5d22 50%) left;
+    background-size: 200%;
+    transition: 0.4s ease-out;
+    border: 1px solid #ff5d22;
+}
+
+.right-btn {
+    border: 1px solid #ff5d22;
+    position: relative;
+    display: inline-block;
+    height: 44px;
+    letter-spacing: unset;
+    font-weight: 500;
+    font-size: 18px;
+    background: linear-gradient(to left, white 50%, #ff5d22 50%) right;
+    background-size: 200%;
+    transition: 0.4s ease-out;
+    border-left: 1px solid #ff5d22;
+    padding-left: 25px;
+    padding-right: 54px;
+}
+
+.right-btn i {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 42px;
+    width: 44px;
+    top: 0;
+    bottom: -1px;
+    right: -2px;
+    border-radius: 5px;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+    color: #f0f0f0;
+    background: #ff5d22;
+}
+
+.left-btn i {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 42px;
+    width: 44px;
+    top: 0;
+    bottom: -1px;
+    left: -2px;
+    border-radius: 5px;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+    color: #f0f0f0;
+    background: #ff5d22;
+}
+
+.left-btn:hover {
+    color: white;
+    background-position: right;
+}
+
+.right-btn:hover {
+    color: white;
+    background-position: left;
+}
+
+.product-head {
+    padding-right: 20px;
+    font-size: 24px;
+}
+
+.change {
+    font-size: 24px;
 }
